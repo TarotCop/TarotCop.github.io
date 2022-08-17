@@ -1,0 +1,14 @@
+{ "columns":10,
+ "image":"TinyRanch_Tiles.png",
+ "imageheight":48,
+ "imagewidth":80,
+ "margin":0,
+ "name":"TinyRanch_Tiles",
+ "spacing":0,
+ "tilecount":60,
+ "tiledversion":"1.9.1",
+ "tileheight":8,
+ "tilewidth":8,
+ "type":"tileset",
+ "version":"1.8"
+}
