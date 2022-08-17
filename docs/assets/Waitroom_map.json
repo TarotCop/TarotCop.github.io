@@ -61,6 +61,10 @@
         {
          "firstgid":61,
          "source":"..\/..\/TinyRanch_Tiles.tsj"
+        }, 
+        {
+         "firstgid":121,
+         "source":"TinyRanch_Tiles.tsj"
         }],
  "tilewidth":8,
  "type":"map",
