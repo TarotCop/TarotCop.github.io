@@ -41,9 +41,10 @@
         "TinyRanch_Tiles.tsj"
     ],
     "project": "untitled.tiled-project",
+    "property.type": "bool",
     "recentFiles": [
-        "Waitroom_map.json",
         "TinyRanch_Tiles.tsj",
+        "Waitroom_map.json",
         "C:/Users/oskar/OneDrive/Skrivbord/gamedev/TarotCop.github.io/TinyRanch_Tiles.tsj"
     ],
     "tileset.embedInMap": true,
