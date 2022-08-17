@@ -1,0 +1,54 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "TinyRanch_Tiles.tsj",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "C:/Users/oskar/OneDrive/Skrivbord/gamedev/TarotCop.github.io/TinyRanch_Tiles.tsj": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "TinyRanch_Tiles.tsj": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Waitroom_map.json": {
+            "scale": 4,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 68.25,
+                "y": 18.5
+            }
+        },
+        "Waitroom_map.json#TinyRanch_Tiles": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.exportedFilePath": "C:/Users/oskar/OneDrive/Skrivbord/gamedev/TarotCop.github.io/docs/assets",
+    "last.imagePath": "C:/Users/oskar/OneDrive/Skrivbord/gamedev/TarotCop.github.io/docs/assets",
+    "map.fixedSize": false,
+    "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
+    "map.lastUsedFormat": "json",
+    "map.tileHeight": 8,
+    "map.tileWidth": 8,
+    "openFiles": [
+        "Waitroom_map.json",
+        "TinyRanch_Tiles.tsj"
+    ],
+    "project": "untitled.tiled-project",
+    "recentFiles": [
+        "Waitroom_map.json",
+        "TinyRanch_Tiles.tsj",
+        "C:/Users/oskar/OneDrive/Skrivbord/gamedev/TarotCop.github.io/TinyRanch_Tiles.tsj"
+    ],
+    "tileset.embedInMap": true,
+    "tileset.tileSize": {
+        "height": 8,
+        "width": 8
+    }
+}
