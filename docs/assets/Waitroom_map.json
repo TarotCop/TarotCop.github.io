@@ -1,4 +1,12 @@
 { "compressionlevel":-1,
+ "editorsettings":
+    {
+     "export":
+        {
+         "format":"json",
+         "target":"..\/..\/Waitroom_map.json"
+        }
+    },
  "height":20,
  "infinite":true,
  "layers":[
@@ -47,7 +55,7 @@
  "tilesets":[
         {
          "firstgid":1,
-         "source":"TinyRanch_Tiles.tsj"
+         "source":"..\/..\/TinyRanch_Tiles.tsj"
         }],
  "tilewidth":8,
  "type":"map",
