@@ -10,6 +10,20 @@
         "TinyRanch_Tiles.tsj": {
             "scaleInDock": 1,
             "scaleInEditor": 1
+        },
+        "Waitroom_map.json": {
+            "scale": 1.5,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 138.66666666666669,
+                "y": 152.66666666666666
+            }
+        },
+        "Waitroom_map.json#TinyRanch_Structures": {
+            "scaleInDock": 3
+        },
+        "Waitroom_map.json#TinyRanch_Tiles": {
+            "scaleInDock": 3
         }
     },
     "last.imagePath": "C:/Users/oskar/OneDrive/Skrivbord/gamedev/TarotCop.github.io/docs/assets",
