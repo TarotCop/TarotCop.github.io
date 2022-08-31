@@ -3,7 +3,7 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "TinyRanch_Tiles.tsj",
+    "activeFile": "Waitroom_map.json",
     "expandedProjectPaths": [
         "."
     ],
@@ -33,7 +33,7 @@
         },
         "Waitroom_map.json": {
             "scale": 2,
-            "selectedLayer": 0,
+            "selectedLayer": 1,
             "viewCenter": {
                 "x": 73,
                 "y": 34
@@ -67,8 +67,8 @@
     "project": "untitled.tiled-project",
     "property.type": "bool",
     "recentFiles": [
-        "Waitroom_map.json",
         "TinyRanch_Tiles.tsj",
+        "Waitroom_map.json",
         "Forest_map.tmj",
         "TinyRanch_MapDecorations.tsj",
         "C:/Users/oskar/OneDrive/Skrivbord/gamedev/TarotCop.github.io/TinyRanch_Tiles.tsj"
