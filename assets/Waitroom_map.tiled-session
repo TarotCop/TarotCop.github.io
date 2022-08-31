@@ -8,18 +8,18 @@
     ],
     "fileStates": {
         "Main_map.json": {
-            "scale": 1.5,
+            "scale": 3,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 482.66666666666663,
-                "y": 154.66666666666666
+                "x": 209.33333333333334,
+                "y": 173.33333333333331
             }
         },
         "Main_map.json#TinyRanch_MapDecorations": {
             "scaleInDock": 1
         },
         "Main_map.json#TinyRanch_Structures": {
-            "scaleInDock": 1
+            "scaleInDock": 3
         },
         "Main_map.json#TinyRanch_Tiles": {
             "scaleInDock": 4
@@ -29,11 +29,11 @@
             "scaleInEditor": 1
         },
         "Waitroom_map.json": {
-            "scale": 1.5,
+            "scale": 3,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 138,
-                "y": 152
+                "x": 175,
+                "y": 174.66666666666666
             }
         },
         "Waitroom_map.json#TinyRanch_Structures": {
