@@ -57,41 +57,40 @@ fpsInput.oninput = function(event: InputEvent) {
 /**
  * Create latency simulation selector
  */
-let fetchLatencySimulationInterval: number;
+// let fetchLatencySimulationInterval: number;
 
 // latency simulation label
-const latencyInput = document.querySelector<HTMLInputElement>("input#latency");
+//const latencyInput = document.querySelector<HTMLInputElement>("input#latency");
 
-if (latencyInput) {
+// if (latencyInput) {
     // current latency label
-    const selectedLatencyLabel = document.querySelector<HTMLInputElement>("#latency-value")
-    selectedLatencyLabel.innerText = `${latencyInput.value} ms`;
+  //  const selectedLatencyLabel = document.querySelector<HTMLInputElement>("#latency-value")
+  //  selectedLatencyLabel.innerText = `${latencyInput.value} ms`;
 
-    latencyInput.onpointerdown = (event: PointerEvent) =>
-        clearInterval(fetchLatencySimulationInterval);
+   // latencyInput.onpointerdown = (event: PointerEvent) =>
+   //     clearInterval(fetchLatencySimulationInterval);
 
-    latencyInput.oninput = (event: InputEvent) =>
-        selectedLatencyLabel.innerText = `${latencyInput.value} ms`;
+   // latencyInput.oninput = (event: InputEvent) =>
+    //    selectedLatencyLabel.innerText = `${latencyInput.value} ms`;
 
-    latencyInput.onchange = function (event: InputEvent) {
+    // latencyInput.onchange = function (event: InputEvent) {
         // request server to update its latency simulation
-        fetch(`${BACKEND_HTTP_URL}/simulate-latency/${latencyInput.value}`);
+       // fetch(`${BACKEND_HTTP_URL}/simulate-latency/${latencyInput.value}`);
 
-        setIntervalFetchLatencySimulation();
-    };
+        //setIntervalFetchLatencySimulation();
+ //   };
 
-    function setIntervalFetchLatencySimulation() {
+ //   function setIntervalFetchLatencySimulation() {
         //
         // Keep fetching latency simulation number from server to keep all browser tabs in sync
         //
-        fetchLatencySimulationInterval = setInterval(() => {
-            fetch(`${BACKEND_HTTP_URL}/latency`)
-                .then((response) => response.json())
-                .then((value) => {
-                    latencyInput.value = value;
-                    latencyInput.oninput(undefined);
-                });
-        }, 1000);
-    }
-    setIntervalFetchLatencySimulation();
-}
+//        fetchLatencySimulationInterval = setInterval(() => {
+ //           fetch(`${BACKEND_HTTP_URL}/latency`)
+   //             .then((response) => response.json())
+     //           .then((value) => {
+       //             latencyInput.value = value;
+         //           latencyInput.oninput(undefined);
+           //     });
+       // }, 1000);
+ //   }
+ //   setIntervalFetchLatencySimulation();}

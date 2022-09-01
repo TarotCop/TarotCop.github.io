@@ -3,7 +3,7 @@
  * Phaser + Colyseus - Part 3.
  * ---------------------------
  * - Connecting with the room
- * - Sending inputs at the user's framerate
+ * - Sending inputs at the user's framerate joinorcreate
  * - Update other player's positions WITH interpolation (for other players)
  * - Client-predicted input for local (current) player
  */
@@ -11,7 +11,7 @@
 import Phaser from "phaser";
 import { Room, Client } from "colyseus.js";
 import { BACKEND_URL } from "../backend";
-import Skeleton from '../enemies/Skeleton'
+// import Skeleton from '../enemies/Skeleton'
 
 export class WaitroomScene extends Phaser.Scene {
     room: Room;
@@ -41,10 +41,8 @@ export class WaitroomScene extends Phaser.Scene {
 
     async create() {
         this.cursorKeys = this.input.keyboard.createCursorKeys();
-        this.debugFPS = this.add.text(4, 4, "poopoo", { color: "#ff0000", }); 
         
 
-        // this.add.sprite(5, 5, "tiles", "TinyRanch_Tiles")
 
         // connect with the room
         await this.connect();
@@ -53,7 +51,7 @@ export class WaitroomScene extends Phaser.Scene {
         const tileset = map.addTilesetImage("TinyRanch_Tiles", "tiles");
         const structureset = map.addTilesetImage("TinyRanch_Structures", "structures");
 
-        // this.add.sprite(1, 100, "tiles")
+        // this.add.sprite(1, 100, "tiles") this.room
         // this.add.sprite(50, 50, "structures")
         // this.add.sprite(10, 10, "decorations")
         
@@ -121,23 +119,7 @@ export class WaitroomScene extends Phaser.Scene {
                 entity.destroy();
                 delete this.playerEntities[sessionId]
             }
-        });      
-
-        this.anims.create({
-            key: "player-idle-down",
-            frames: [{}]
-        })
-
-        this.skeletons = this.physics.add.group({
-			classType: Skeleton,
-			createCallback: (go) => {
-				const lizGo = go as Skeleton
-				lizGo.body.onCollide = true
-			}
-		})
-
-        const skelly = this.physics.add.sprite(75, 75, "atlas" )
-        
+        });             
         
     }
 
@@ -151,13 +133,18 @@ export class WaitroomScene extends Phaser.Scene {
         const client = new Client(BACKEND_URL);
 
         try {
+            console.log("Connecting...")
+
+            //this.room = await client.joinOrCreate("waitroom", {});
             this.room = await client.joinOrCreate("waitroom", {});
 
             // connection successful!
             connectionStatusText.destroy();
+            console.log("Connected")
 
         } catch (e) {
             // couldn't connect
+            console.log("Failed connection")
             connectionStatusText.text =  "Could not connect with the server.";
         }
 
